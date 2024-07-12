@@ -27,21 +27,21 @@ root.title("Lyrics Extractor")
 # Set background color
 root.configure(bg='lightgray')
 
-# Artist label and entry with increased font size
+# Artist label and entry 
 tk.Label(root, text="Artist", bg='#f0f0f0', font=('Helvetica', 14)).grid(row=0, column=0, padx=10, pady=10)
 artist_entry = tk.Entry(root, font=('Helvetica', 12))
 artist_entry.grid(row=0, column=1, padx=10, pady=10)
 
-# Song label and entry with increased font size
+# Song label and entry 
 tk.Label(root, text="Song", bg='#f0f0f0', font=('Helvetica', 14)).grid(row=1, column=0, padx=10, pady=10)
 song_entry = tk.Entry(root, font=('Helvetica', 12))
 song_entry.grid(row=1, column=1, padx=10, pady=10)
 
-# Get Lyrics button with custom colors
+
 get_lyrics_button = tk.Button(root, text="Get Lyrics", command=get_lyrics, bg='#C1FFC1', fg='black', font=('Helvetica', 12, 'bold'))
 get_lyrics_button.grid(row=2, column=0, columnspan=2, pady=10)
 
-# Lyrics text box with light background color
+# Lyrics text box 
 lyrics_text = tk.Text(root, wrap='word', height=15, width=50, bg='#FFB6C1')
 lyrics_text.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
 
